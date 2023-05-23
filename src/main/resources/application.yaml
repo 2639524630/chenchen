@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  datasource:
+   druid:
+     driver-class-name: com.mysql.cj.jdbc.Driver
+     url: jdbc:mysql://localhost:3306/chenchen?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+     username: root
+     password: 123456
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#  指定转存路径
+chenchen:
+  path: C:\Users\86152\Pictures\图片转存\
